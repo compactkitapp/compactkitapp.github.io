@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CompactKit - Compress all in one</title>
+    <meta
+      name="description"
+      content="CompactKit compresses images, videos, PDFs, and more with smart quality controls, quick exports, and a polished all-in-one workflow."
+    />
+    <link rel="icon" type="image/png" href="assets/images/meta/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/images/meta/apple-touch-icon-precomposed.png"
+    />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem("compactkit-theme");
+        } catch {}
+        const resolvedTheme = savedTheme || "dark";
+        document.documentElement.dataset.theme = resolvedTheme;
+        document.documentElement.classList.remove("theme-light", "theme-dark");
+        document.documentElement.classList.add(
+          resolvedTheme === "light" ? "theme-light" : "theme-dark"
+        );
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <img
+            class="brand-mark"
+            src="assets/images/branding/app-icon.png"
+            alt="CompactKit app icon"
+          />
+          <span class="brand-text">
+            <strong>CompactKit</strong>
+            <span>Compress all in one</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="/support">Support</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" role="switch" aria-checked="true" data-theme-toggle>
+            <span class="theme-toggle-text">Dark</span>
+            <span class="theme-switch" aria-hidden="true"></span>
+            <span class="theme-toggle-state" data-theme-state>On</span>
+          </button>
+          <a class="button button-primary button-small" href="#download">Download Free</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Compress images, videos, PDFs, and more in one place</p>
+            <h1>Save space fast without making your files look cheap.</h1>
+            <p class="hero-text">
+              CompactKit gives creators, students, and teams a premium way to shrink
+              large files while protecting clarity. One app, smart presets, clean
+              exports, and quality you can trust.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#download">Download Free</a>
+              <a class="button button-secondary" href="/support">Get support</a>
+            </div>
+            <div class="hero-metrics" aria-label="Product highlights">
+              <article>
+                <strong>4 file types</strong>
+                <span>Images, videos, PDFs, and more</span>
+              </article>
+              <article>
+                <strong>Up to 85%</strong>
+                <span>Smaller files with tuned quality controls</span>
+              </article>
+              <article>
+                <strong>Batch-ready</strong>
+                <span>Queue multiple files and export faster</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-glow hero-glow-primary"></div>
+            <div class="hero-glow hero-glow-accent"></div>
+
+            <div class="floating-card floating-card-top">
+              <span class="label">Before</span>
+              <strong>48.6 MB</strong>
+              <span>4K travel video clip</span>
+            </div>
+
+            <div class="phone-mockup">
+              <div class="phone-screen">
+                <div class="phone-status">
+                  <span>CompactKit</span>
+                  <span>Quality: High</span>
+                </div>
+                <div class="screen-icon-wrap">
+                  <img src="assets/images/branding/app-icon.png" alt="" />
+                </div>
+                <div class="compression-card">
+                  <div class="compression-row">
+                    <span>Photo batch</span>
+                    <strong>12 items</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <span></span>
+                  </div>
+                  <div class="compression-stats">
+                    <article>
+                      <span>Saved</span>
+                      <strong>1.8 GB</strong>
+                    </article>
+                    <article>
+                      <span>Quality</span>
+                      <strong>92%</strong>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="comparison-card">
+              <div class="comparison-header">
+                <span class="label">After</span>
+                <strong>7.2 MB</strong>
+              </div>
+              <div class="comparison-slider">
+                <div class="comparison-before">
+                  <span>Before</span>
+                  <strong>Sharp visuals</strong>
+                </div>
+                <div class="comparison-after">
+                  <span>After</span>
+                  <strong>Fast to share</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card floating-card-bottom">
+              <span class="label">Export preset</span>
+              <strong>Web + Social</strong>
+              <span>Optimized for speed and clarity</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="trusted-strip" aria-label="Reasons people choose CompactKit">
+          <span>Fast exports</span>
+          <span>Format-aware optimization</span>
+          <span>Simple quality presets</span>
+          <span>Clean mobile workflow</span>
+          <span>Built for everyday sharing</span>
+        </section>
+
+        <section class="section" id="features">
+          <div class="section-heading">
+            <div class="section-label">
+              <p class="eyebrow">Core features</p>
+              <a class="section-anchor-link" href="#features" aria-label="Link to Core features">#</a>
+            </div>
+            <h2>Everything needed to compress files without juggling tools.</h2>
+            <p>
+              CompactKit keeps the workflow simple while still giving users
+              meaningful control over file size, quality, and export speed.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon">IMG</span>
+              <h3>Image compression</h3>
+              <p>Reduce photo size for web, chat, or storage without flattening detail.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">VID</span>
+              <h3>Video optimization</h3>
+              <p>Trim heavy clips down for quick sharing while keeping playback smooth.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">PDF</span>
+              <h3>PDF cleanup</h3>
+              <p>Make documents easier to email, upload, and archive with lighter exports.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">BAT</span>
+              <h3>Batch workflows</h3>
+              <p>Process multiple files in one pass when you need speed, not repetition.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">QLT</span>
+              <h3>Smart quality presets</h3>
+              <p>Switch between balanced, high, and ultra-light settings in a tap.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">PRV</span>
+              <h3>Preview before export</h3>
+              <p>See the expected result first so you can pick the right tradeoff with confidence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section how-it-works" id="how-it-works">
+          <div class="section-heading">
+            <div class="section-label">
+              <p class="eyebrow">How it works</p>
+              <a
+                class="section-anchor-link"
+                href="#how-it-works"
+                aria-label="Link to How it works"
+                >#</a
+              >
+            </div>
+            <h2>Three steps from bloated files to clean exports.</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>Import your files</h3>
+              <p>Choose images, videos, PDFs, or mixed batches directly from your device.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>Pick a preset</h3>
+              <p>Select the compression level that matches your goal: quality, size, or speed.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>Export and share</h3>
+              <p>Save the optimized files and send them anywhere without waiting on huge uploads.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section testimonials" id="testimonials">
+          <div class="section-heading">
+            <div class="section-label">
+              <p class="eyebrow">Testimonials</p>
+              <a
+                class="section-anchor-link"
+                href="#testimonials"
+                aria-label="Link to Testimonials"
+                >#</a
+              >
+            </div>
+            <h2>CompactKit feels built for people who handle large files every day.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                "I used to bounce between three apps just to send a compressed
+                presentation pack. CompactKit replaced that entire routine."
+              </p>
+              <strong>Rina T.</strong>
+              <span>Freelance designer</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                "The before-and-after preview is the part that sold me. I can
+                keep files light without second-guessing the result."
+              </p>
+              <strong>Marcus L.</strong>
+              <span>Content creator</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                "Our team shares PDFs and short videos constantly. This made
+                uploads faster and cut down the back-and-forth."
+              </p>
+              <strong>Elena P.</strong>
+              <span>Operations lead</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section callout" id="download">
+          <div class="callout-panel">
+            <div>
+              <p class="eyebrow">Ready to make file cleanup effortless?</p>
+              <h2>Download CompactKit free and compress smarter from the first file.</h2>
+            </div>
+            <div class="callout-actions">
+              <a
+                class="store-badge-link"
+                data-store-link="appStore"
+                href="https://www.apple.com/app-store/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="store-badge"
+                  src="assets/images/store-badges/App_Store_Badge.png"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <a
+                class="store-badge-link"
+                data-store-link="playStore"
+                href="https://play.google.com/store"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="store-badge"
+                  src="assets/images/store-badges/GooglePlay_Badge.png"
+                  alt="Get it on Google Play"
+                />
+              </a>
+            </div>
+            <div class="wishlist-panel">
+              <div class="wishlist-copy">
+                <p class="eyebrow">Get launch updates</p>
+                <h3>Join the CompactKit wishlist.</h3>
+                <p>
+                  Leave your email and we'll be ready to notify you when the app is
+                  available on the App Store and Google Play.
+                </p>
+              </div>
+              <form class="wishlist-form" data-wishlist-form>
+                <label class="wishlist-field">
+                  <span class="visually-hidden">Email address</span>
+                  <input
+                    class="wishlist-input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                    data-wishlist-email
+                  />
+                </label>
+                <button class="button button-primary wishlist-button" type="submit">
+                  Join wishlist
+                </button>
+              </form>
+              <p class="wishlist-note" data-wishlist-message>
+                We use your default mail app for now, since the store listing is not live yet.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <strong>CompactKit</strong>
+          <p>Compress all in one.</p>
+          <p>© 2026 CompactKit Project. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
+          <a href="/support">Support</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="assets/store-links.js"></script>
+    <script src="assets/wishlist-config.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

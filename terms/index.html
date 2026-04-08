@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use | CompactKit</title>
+    <meta
+      name="description"
+      content="Read the CompactKit Terms of Use covering acceptable use, intellectual property, disclaimers, and support."
+    />
+    <link rel="icon" type="image/png" href="../assets/images/meta/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/images/meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/images/meta/apple-touch-icon-precomposed.png"
+    />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem("compactkit-theme");
+        } catch {}
+        const resolvedTheme = savedTheme || "dark";
+        document.documentElement.dataset.theme = resolvedTheme;
+        document.documentElement.classList.remove("theme-light", "theme-dark");
+        document.documentElement.classList.add(
+          resolvedTheme === "light" ? "theme-light" : "theme-dark"
+        );
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body class="legal-body">
+    <div class="page-shell legal-shell">
+      <header class="site-header legal-header">
+        <a class="brand" href="/">
+          <img
+            class="brand-mark"
+            src="../assets/images/branding/app-icon.png"
+            alt="CompactKit app icon"
+          />
+          <span class="brand-text">
+            <strong>CompactKit</strong>
+            <span>Compress all in one</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/support">Support</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" role="switch" aria-checked="true" data-theme-toggle>
+            <span class="theme-toggle-text">Dark</span>
+            <span class="theme-switch" aria-hidden="true"></span>
+            <span class="theme-toggle-state" data-theme-state>On</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="legal-page">
+        <section class="legal-hero">
+          <p class="eyebrow">Terms of Use</p>
+          <h1>Terms for using CompactKit and this website.</h1>
+          <p>Effective date: April 8, 2026</p>
+        </section>
+
+        <section class="legal-card">
+          <h2>1. Acceptance</h2>
+          <p>
+            By accessing or using CompactKit, you agree to these Terms of Use. If you
+            do not agree, do not use the app or website.
+          </p>
+
+          <h2>2. License</h2>
+          <p>
+            Subject to these terms, CompactKit grants you a limited, non-exclusive,
+            non-transferable, revocable license to use the app for personal or
+            internal business use.
+          </p>
+
+          <h2>3. Acceptable use</h2>
+          <p>
+            You agree not to misuse the service, interfere with operations, attempt
+            unauthorized access, reverse engineer protected components where prohibited
+            by law, or process content you do not have the right to use.
+          </p>
+
+          <h2>4. Intellectual property</h2>
+          <p>
+            The CompactKit name, branding, website design, and associated materials
+            are owned by their respective rights holders and may not be copied or
+            reused without permission except as allowed by law.
+          </p>
+
+          <h2>5. User content</h2>
+          <p>
+            You remain responsible for the files and content you choose to process.
+            CompactKit does not claim ownership over your files.
+          </p>
+
+          <h2>6. Availability</h2>
+          <p>
+            Features may change, be improved, suspended, or discontinued at any time.
+            CompactKit does not guarantee uninterrupted availability.
+          </p>
+
+          <h2>7. Disclaimers</h2>
+          <p>
+            The app and website are provided on an "as is" and "as available" basis
+            to the fullest extent allowed by law. No guarantee is made that the
+            service will be error-free or suitable for every use case.
+          </p>
+
+          <h2>8. Limitation of liability</h2>
+          <p>
+            To the maximum extent permitted by law, CompactKit will not be liable for
+            indirect, incidental, special, consequential, or punitive damages arising
+            from use of the app or website.
+          </p>
+
+          <h2>9. Termination</h2>
+          <p>
+            Access may be suspended or terminated if these terms are violated or if
+            continued access would create legal, security, or operational risk.
+          </p>
+
+          <h2>10. Governing law</h2>
+          <p>
+            These terms are governed by the laws applicable in the jurisdiction where
+            the service operator is established, unless local consumer law requires
+            otherwise.
+          </p>
+
+          <h2>11. Contact</h2>
+          <p>
+            Questions about these terms can be sent to
+            <a
+              class="inline-link"
+              href="mailto:compactkitapp@gmail.com"
+              style="text-decoration: underline; text-underline-offset: 0.16em;"
+              >compactkitapp@gmail.com</a
+            >.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer legal-footer">
+        <div>
+          <p>© 2026 CompactKit Project. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/support">Support</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>

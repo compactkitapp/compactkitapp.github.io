@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support | CompactKit</title>
+    <meta
+      name="description"
+      content="Contact CompactKit support to report a bug, ask a question, or get help with the app."
+    />
+    <link rel="icon" type="image/png" href="../assets/images/meta/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/images/meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/images/meta/apple-touch-icon-precomposed.png"
+    />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem("compactkit-theme");
+        } catch {}
+        const resolvedTheme = savedTheme || "dark";
+        document.documentElement.dataset.theme = resolvedTheme;
+        document.documentElement.classList.remove("theme-light", "theme-dark");
+        document.documentElement.classList.add(
+          resolvedTheme === "light" ? "theme-light" : "theme-dark"
+        );
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body class="legal-body">
+    <div class="page-shell legal-shell">
+      <header class="site-header legal-header">
+        <a class="brand" href="/">
+          <img
+            class="brand-mark"
+            src="../assets/images/branding/app-icon.png"
+            alt="CompactKit app icon"
+          />
+          <span class="brand-text">
+            <strong>CompactKit</strong>
+            <span>Compress all in one</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" role="switch" aria-checked="true" data-theme-toggle>
+            <span class="theme-toggle-text">Dark</span>
+            <span class="theme-switch" aria-hidden="true"></span>
+            <span class="theme-toggle-state" data-theme-state>On</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="legal-page">
+        <section class="legal-hero" id="support">
+          <div class="section-label">
+            <p class="eyebrow">Support</p>
+            <a class="section-anchor-link" href="#support" aria-label="Link to Support">#</a>
+          </div>
+          <h1>Need help with CompactKit?</h1>
+          <p>Reach out and we'll help you troubleshoot, report issues, or answer product questions.</p>
+        </section>
+
+        <section class="support-grid">
+          <article class="support-card">
+            <p class="eyebrow">Report a Bug</p>
+            <h2>Tell us what went wrong.</h2>
+            <p>
+              If something is broken, unexpected, or inconsistent, send a report with
+              the device model, app version, and steps to reproduce the issue.
+            </p>
+            <a
+              class="button button-primary"
+              href="mailto:compactkitapp@gmail.com?subject=CompactKit%20Bug%20Report"
+              >Report a Bug</a
+            >
+          </article>
+
+          <article class="support-card">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Ask a question or request help.</h2>
+            <p>
+              For product questions, feedback, partnerships, or general support,
+              contact the CompactKit team directly by email.
+            </p>
+            <a
+              class="button button-secondary"
+              href="mailto:compactkitapp@gmail.com?subject=CompactKit%20Support%20Request"
+              >Contact Us</a
+            >
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer legal-footer">
+        <div>
+          <p>© 2026 CompactKit Project. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>

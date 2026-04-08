@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | CompactKit</title>
+    <meta
+      name="description"
+      content="Read the CompactKit privacy policy for details about information handling, support communication, and your choices."
+    />
+    <link rel="icon" type="image/png" href="../assets/images/meta/favicon.png" />
+    <link rel="apple-touch-icon" href="../assets/images/meta/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="../assets/images/meta/apple-touch-icon-precomposed.png"
+    />
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem("compactkit-theme");
+        } catch {}
+        const resolvedTheme = savedTheme || "dark";
+        document.documentElement.dataset.theme = resolvedTheme;
+        document.documentElement.classList.remove("theme-light", "theme-dark");
+        document.documentElement.classList.add(
+          resolvedTheme === "light" ? "theme-light" : "theme-dark"
+        );
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body class="legal-body">
+    <div class="page-shell legal-shell">
+      <header class="site-header legal-header">
+        <a class="brand" href="/">
+          <img
+            class="brand-mark"
+            src="../assets/images/branding/app-icon.png"
+            alt="CompactKit app icon"
+          />
+          <span class="brand-text">
+            <strong>CompactKit</strong>
+            <span>Compress all in one</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/terms">Terms of Use</a>
+          <a href="/support">Support</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" role="switch" aria-checked="true" data-theme-toggle>
+            <span class="theme-toggle-text">Dark</span>
+            <span class="theme-switch" aria-hidden="true"></span>
+            <span class="theme-toggle-state" data-theme-state>On</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="legal-page">
+        <section class="legal-hero">
+          <p class="eyebrow">Privacy Policy</p>
+          <h1>Your information, explained plainly.</h1>
+          <p>Effective date: April 8, 2026</p>
+        </section>
+
+        <section class="legal-card">
+          <h2>1. Overview</h2>
+          <p>
+            This Privacy Policy explains how CompactKit may collect, use, and protect
+            information when you use the app, visit this website, or contact support.
+          </p>
+
+          <h2>2. Information you provide</h2>
+          <p>
+            If you contact CompactKit by email, feedback form, or another support
+            channel, you may provide information such as your name, email address,
+            message contents, screenshots, or attachments you choose to send.
+          </p>
+
+          <h2>3. App and device information</h2>
+          <p>
+            CompactKit may receive limited technical information needed to operate,
+            maintain, and improve the service, such as app version, device type,
+            operating system version, language, and basic diagnostic details.
+          </p>
+
+          <h2>4. Firebase Analytics, Crashlytics, and Google Ads</h2>
+          <p>
+            CompactKit uses Firebase Analytics and Firebase Crashlytics to understand
+            app usage, monitor stability, and diagnose failures. Depending on how the
+            app is used and configured, these services may process information such as
+            app-instance identifiers, session and usage statistics, approximate
+            geolocation, device and app information, stack traces, relevant app state,
+            and device metadata associated with crashes or errors. CompactKit uses
+            this information only to monitor performance, investigate bugs and crashes,
+            and improve app quality. It is used only for app analytics, diagnostics,
+            and stability improvement.
+          </p>
+          <p>
+            CompactKit may also use Google Ads services to display and measure ads in
+            the app. Depending on configuration, these services may process data such
+            as device and app information, identifiers, approximate location,
+            ad-interaction data, and performance information to support ad delivery,
+            fraud prevention, and measurement. Where required, ad-related processing
+            is subject to applicable user consent and platform privacy settings.
+          </p>
+
+          <h2>5. File handling</h2>
+          <p>
+            Files selected for compression are processed only to provide the requested
+            app functionality. CompactKit is designed so that file compression and
+            related operations happen on your device, and your files are not uploaded
+            to third-party servers as part of normal use of these features. Users
+            should only process files they have the right to use.
+          </p>
+
+          <h2>6. How information may be used</h2>
+          <p>
+            Information may be used to provide app functionality, respond to support
+            requests, troubleshoot bugs, improve performance, prevent abuse, and meet
+            legal obligations.
+          </p>
+
+          <h2>7. Sharing</h2>
+          <p>
+            CompactKit does not sell personal information. Information may be shared
+            with service providers that help operate the app or website, or when
+            required by law, contract, or a valid legal request.
+          </p>
+
+          <h2>8. Your choices</h2>
+          <p>
+            You may choose not to submit optional information. You can also contact
+            CompactKit to request updates or deletion of support communications where
+            legally permitted.
+          </p>
+
+          <h2>9. Children's privacy</h2>
+          <p>
+            CompactKit is not intended for children under the age required by local
+            law to consent to data processing without parental involvement.
+          </p>
+
+          <h2>10. Changes to this policy</h2>
+          <p>
+            This policy may be updated from time to time. The effective date above
+            will be revised when changes are published.
+          </p>
+
+          <h2>11. Contact</h2>
+          <p>
+            Privacy questions can be sent to
+            <a
+              class="inline-link"
+              href="mailto:compactkitapp@gmail.com"
+              style="text-decoration: underline; text-underline-offset: 0.16em;"
+              >compactkitapp@gmail.com</a
+            >.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer legal-footer">
+        <div>
+          <p>© 2026 CompactKit Project. All rights reserved.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/terms">Terms of Use</a>
+          <a href="/support">Support</a>
+        </nav>
+      </footer>
+    </div>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
