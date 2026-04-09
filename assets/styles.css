@@ -336,18 +336,34 @@ img {
 .section-label {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.section-label .eyebrow {
+  margin: 0;
 }
 
 .section-anchor-link {
+  display: inline-block;
+  margin-left: 0.08em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.03em;
+  line-height: 1;
   opacity: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.5em;
   font-weight: 700;
   transition:
     opacity 160ms ease,
-    color 160ms ease,
-    transform 160ms ease;
+    color 160ms ease;
+}
+
+.section-label .section-anchor-link {
+  margin-left: 0;
+  top: 0;
+  font-size: 0.95rem;
 }
 
 .section-heading:hover .section-anchor-link,
@@ -360,7 +376,6 @@ img {
 .section-anchor-link:hover,
 .section-anchor-link:focus-visible {
   color: var(--text);
-  transform: translateY(-1px);
 }
 
 .hero h1,
@@ -760,6 +775,17 @@ img {
 .wishlist-copy h3 {
   margin: 0 0 10px;
   font-size: 1.35rem;
+}
+
+.wishlist-copy h3 .section-anchor-link {
+  margin-left: 0.12em;
+  top: 0;
+  font-size: 0.95rem;
+}
+
+.wishlist-copy:hover .section-anchor-link,
+.wishlist-copy:focus-within .section-anchor-link {
+  opacity: 1;
 }
 
 .wishlist-copy p:last-child,
