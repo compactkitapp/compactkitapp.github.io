@@ -128,6 +128,13 @@
         formData.append("email", email);
         formData.append("source", "landing-page");
         formData.append("userAgent", window.navigator.userAgent || "");
+        formData.append("locale", window.navigator.language || "");
+
+        try {
+          formData.append("timeZone", Intl.DateTimeFormat().resolvedOptions().timeZone || "");
+        } catch (error) {
+          formData.append("timeZone", "");
+        }
 
         if (message) {
           message.textContent = "Submitting your wishlist signup...";
@@ -141,7 +148,8 @@
           .then(function () {
             form.reset();
             if (message) {
-              message.textContent = "You're on the wishlist. We'll let you know when CompactKit launches.";
+              message.textContent =
+                "You're on the wishlist. Check your inbox for a welcome email and early-trial preference.";
               message.classList.add("is-success");
             }
           })
