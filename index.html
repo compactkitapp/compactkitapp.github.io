@@ -328,21 +328,24 @@
                 />
               </a>
             </div>
+            <!-- Early access section temporarily disabled
             <div class="wishlist-panel">
               <div class="wishlist-copy">
-                <p class="eyebrow">Get launch updates</p>
-                <h3 id="wishlist">
-                  Join the CompactKit wishlist.
+                <p class="eyebrow section-label">
+                  Get early access
                   <a
                     class="section-anchor-link"
-                    href="#wishlist"
-                    aria-label="Link to Join the CompactKit wishlist"
+                    href="#early-access"
+                    aria-label="Link to CompactKit early access registration"
                     >#</a
                   >
+                </p>
+                <h3 id="early-access">
+                  Register for the release candidate or join alpha/beta testing.
                 </h3>
                 <p>
-                  Leave your email and we'll be ready to notify you when the app is
-                  available on the App Store and Google Play.
+                  Pick the track you want and leave your email. We'll send release-candidate
+                  availability updates or alpha/beta onboarding steps directly to your inbox.
                 </p>
               </div>
               <form class="wishlist-form" data-wishlist-form>
@@ -352,20 +355,28 @@
                     class="wishlist-input"
                     type="email"
                     name="email"
-                    placeholder="Enter your email"
+                    placeholder="Email"
                     autocomplete="email"
                     required
                     data-wishlist-email
                   />
                 </label>
+                <label class="wishlist-track">
+                  <span class="visually-hidden">Signup track</span>
+                  <select class="wishlist-select" name="track" data-wishlist-track required>
+                    <option value="release-candidate">Release candidate</option>
+                    <option value="alpha-beta">Alpha/Beta test</option>
+                  </select>
+                </label>
                 <button class="button button-primary wishlist-button" type="submit">
-                  Join wishlist
+                  Register
                 </button>
               </form>
               <p class="wishlist-note" data-wishlist-message>
-                Join the wishlist and we'll email you a quick early-trial preference right away.
+                Choose your track and we'll email the next steps.
               </p>
             </div>
+            -->
           </div>
         </section>
       </main>
