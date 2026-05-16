@@ -666,6 +666,52 @@ img {
   text-align: center;
 }
 
+.launch-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 0 30px;
+}
+
+.launch-badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 10px;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.launch-badge-link:hover,
+.launch-badge-link:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: var(--store-badge-shadow);
+}
+
+.launch-badge-image {
+  width: 265px;
+  max-width: 100%;
+  height: 58px;
+  object-fit: contain;
+}
+
+.launch-badge-image-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .launch-badge-image-light,
+:root.theme-dark .launch-badge-image-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .launch-badge-image-dark,
+:root.theme-dark .launch-badge-image-dark {
+  display: block;
+}
+
 .section {
   padding: 68px 0;
 }
@@ -1223,6 +1269,10 @@ img {
   .trusted-strip,
   .hero-metrics {
     grid-template-columns: 1fr;
+  }
+
+  .launch-badges {
+    justify-content: flex-start;
   }
 
   .comparison-slider,
